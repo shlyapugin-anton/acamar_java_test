@@ -22,7 +22,9 @@ public class Task1Tests {
         return Stream.of(
                 Arguments.of("Hello world", 5),
                 Arguments.of("   fly me   to   the moon  ", 4),
-                Arguments.of("William Shakespeare was an English   playwright", 10)
+                Arguments.of("William Shakespeare was an English   playwright", 10),
+                Arguments.of("     ", 0),                // ADD new case: empty string has length 0
+                Arguments.of("          flaaa  ", 5)     // and another case with just one word and some spaces
         );
     }
 }
